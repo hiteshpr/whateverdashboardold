@@ -25,9 +25,9 @@ import { ModalModule } from 'ngx-bootstrap';
     AlertModule.forRoot(),
     RouterModule.forRoot([
       { path:'', component:HomeComponent},
-       { path:'whateverdashboard/home', component:HomeComponent},
-      { path:'whateverdashboard/login', component:LoginComponent},
-      { path:'whateverdashboard/signup', component:SignupComponent}
+       { path:'home', component:HomeComponent},
+      { path:'login', component:LoginComponent},
+      { path:'signup', component:SignupComponent}
       ]),
     ModalModule.forRoot()
   ],
