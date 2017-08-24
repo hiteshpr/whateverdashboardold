@@ -1,0 +1,46 @@
+
+.centeralign{
+	font: italic bold 28px sans-serif;
+	text-align: center;
+	padding-bottom: 13px;
+
+}
+.carousel {
+height: 300px;
+margin-bottom: 50px;
+}
+.carousel-caption {
+z-index: 10;
+}
+.carousel .item {
+background-color: rgba(0, 0, 0, 0.8);
+height: 300px;
+}
+.Footer{
+	background-color: black;
+	height: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+#social{
+	font-size: 31px;
+	padding-right:4%;
+}
+.bgimage{
+background-image: url(random-background-collage-paint.jpg);
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+.carousel-caption{
+    bottom: 65px;
+}
+#firstpanelbody {
+	background-color: antiquewhite;
+}
+#secondpanelbody {
+	background-color: aliceblue;
+	height: 195px;
+}
+

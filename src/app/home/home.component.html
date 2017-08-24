@@ -1,0 +1,207 @@
+<head>
+  <title>Whatever | Home</title>
+</head>
+<!-- jumbotron -->
+<div class="jumbotron col-xs-12 col-sm-12 bgimage">
+
+<img src="logo.jpg" />
+<p style="padding-top: 10px;"><a role="button"  href="/signup" class="btn btn-lg btn-info" >Sign up today</a>
+<a role="button" href="/login" class="btn btn-lg btn-danger" style="float: right;">Sign In </a></p>
+</div>
+<div class="container">
+<h3 class="centeralign">{{ tagline }}</h3>
+<!-- 2-column layout -->
+<div class="row row-offcanvas row-offcanvas-right">
+<div class="col-xs-12 col-sm-12">
+
+<div class="row">
+<!-- column 1 -->
+<div class="col-sm-6">
+<!-- box 1 -->
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"> The Process </h3>
+</div>
+<div class="panel-body" id="firstpanelbody">
+<div class="list-group">
+  		<ul>
+  			<li *ngFor="let pnt of points;"> 
+  				<a href="#" class="list-group-item" style="margin-bottom: 10px;"> {{ pnt.point }} </a> 
+  			</li>
+  		</ul>
+		</div>
+</div>
+</div>
+</div>
+ <!-- /column 1 -->
+<!-- column 2 -->
+<div class="col-sm-6">
+<!-- box 3 -->
+<div class="panel panel-success">
+<div class="panel-heading">
+<h3 class="panel-title"> Our Specialities </h3>
+</div>
+<div class="panel-body" id="secondpanelbody">
+<p> We know every thing that you buy is close to your heart. We take atmost care that your order reaches you on or before time and in perfect condition. </p>
+<p> After all, </p>
+<q>{{ quote }}</q>
+<p><cite>Jeff Bezons, Amazon CEO </cite></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+<!-- box 2 -->
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title"> Payment methods supported </h3>
+</div>
+<div class="panel-body" id="thirdpanelbody">
+   <a href="https://www.visa.com/#" title="VISA Card"><i class="fa fa-cc-visa" id="social"></i></a>
+   <a href="https://www.paypal.com/#" title="Paypal Card"><i class="fa fa-cc-paypal" id="social"></i></a>
+   <a href="https://www.mastercard.com/#" title="MasterCard"><i class="fa fa-cc-mastercard" id="social"></i></a>
+   <a href="https://www.google.com/wallet" title="Google Wallet"><i class="fa fa-google-wallet" id="social"></i></a>
+   <a href="https://www.google.com/wallet" title="I don't know"><i class="fa fa-credit-card-alt" id="social"></i></a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+
+<!-- slider -->
+<div id="slider" class="carousel slide" data-ride="carousel">
+
+<!-- controls -->
+<ol class="carousel-indicators">
+<li data-target="#slider" data-slide-to="0" class="active"></li>
+<li data-target="#slider" data-slide-to="1"></li>
+<li data-target="#slider" data-slide-to="2"></li>
+</ol>
+
+<!-- <h2 style="color: white; text-align: center; font-family: cursive;"><b> Testimonials </b></h2> -->
+<div class="carousel-inner">
+
+<!-- slides -->
+<div class="item active">
+
+<div class="container ">
+
+<div class="carousel-caption">
+<h1>Great Job, Great Team </h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet tempus massa. Nam quis purus sit amet augue iaculis dapibus non in nisi.<br />Sed sed volutpat neque. Nulla posuere.</p>
+</div>
+</div>
+</div>
+<div class="item" *ngFor="let cara of carausol">
+<div class="container">
+<div class="carousel-caption">
+<h1>{{ cara.heading}} </h1>
+<q> {{ cara.quote}} </q>
+<p><cite> {{ cara.cite}} </cite></p>
+</div>
+</div>
+</div>
+
+</div>
+<!-- left-right controls -->
+<a class="left carousel-control" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+</div><!-- /.carousel -->
+<div class="container">
+<!--  menu bar -->
+<nav class="navbar navbar-default navbar-static">
+<div class="navbar-header">
+<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#b-menu-2">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/home">Whatever</a>
+</div>
+<!-- submenu elements for #b-menu-2 -->
+<div class="collapse navbar-collapse" id="b-menu-2">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> Legal </a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> Change Language <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li *ngFor="let item of languages;"><a href="#"> {{item.lang}} </a></li>
+</ul>
+</li>
+</ul>
+ <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+</div><!-- /.nav-collapse -->
+</nav>
+</div>
+ <div class="container">
+<footer class="Footer">
+ <div class="container">
+  
+  <div class="col-xs-12 col-sm-9">
+
+	<div class="row">
+		<!-- column 1 -->
+		<div class="col-sm-6">
+    		 <h3 style="color: white;"> We are Social!</h3>
+    		 <!-- Social Media Links -->
+       <a href="https://www.facebook.com/#"><i class="fa fa-facebook-official" id="social"></i></a>
+       <a href="https://www.twitter.com/#"><i class="fa fa-twitter" id="social"></i></a>
+       <a href="https://www.instagram.com/#"><i class="fa fa-instagram" id="social"></i></a>
+       <a href="https://www.reddit.com/r/#"><i class="fa fa-reddit-alien" id="social"></i></a>
+   	   <a href="https://www.snapchat.com/#"> <i class="fa fa-snapchat-ghost" id="social"></i></a>
+    </div>
+
+   
+    	<div class="col-sm-6">
+    		<div class="row">
+    			<div class="col-sm-3 col-xs-3">
+      				<h3 style="color: white;"> Help </h3>
+      		<ul>
+      			<li><a href="/help/Payments"> Payments </a></li>
+      			<li><a href="/help/Shipping"> Shipping </a></li>
+      			<li><a href="/help/Returns"> Returns </a></li>
+      			<li><a href="/help/FAQ"> FAQ </a></li>
+      		</ul>
+     			 </div>
+     			 <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left: 100px;">
+     			 	<h3 style="color: white;"> Miscellaneous</h3>
+  			<ul>
+      			<li><a href="/About_Us"> About  </a></li>
+      			<li><a href="/Contact"> Contact  </a></li>
+      			<li><a href="/Careers"> Careers </a></li>
+      		</ul>
+
+     			 </div>
+
+
+    		</div>
+    		 </div>
+    	</div>
+	
+	</div>
+
+	
+ </div>
+
+<div class="container">
+
+</div>
+</footer>
+</div>

@@ -1,0 +1,20 @@
+img {
+    display: block;
+    margin: 0 auto;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.form-inline .form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+.control-label {
+    color:#333333;
+}
+@media (max-width: 978px) {
+	.note{
+		margin-left: 0%;
+	}
+}

@@ -1,0 +1,12 @@
+img {
+    display: block;
+    margin: 0 auto;
+}
+.maincontent{
+	width:361px; margin:0 auto;
+	text-align: center;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
